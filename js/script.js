@@ -1,30 +1,53 @@
 /******************************************
 Treehouse FSJS Techdegree:
 project 1 - A Random Quote Generator
+Coder: Anton Serdyuchenko anton415@gmail.com
 ******************************************/
 
-// Study guide for this project - https://drive.google.com/file/d/1s5grutGuQFwJcQP8bFwEI69Q8FCkGdDk/view?usp=sharing
+// Init data.
+var quotes = [
+	{
+		quote = 'I\'m going to make him an offer he can\'t refuse.',
+		source = 'The Godfather',
+		citation = 'Movie',
+		year = '1972'
+	},
+	{
+    quote = 'May the Force be with you.',
+    source = 'Star Wars',
+    citation = 'Movie',
+    year = '1977'
 
+	},
+  {
+    quote = 'I love the smell of napalm in the morning.',
+    source = 'Apocalypse Now',
+    citation = 'Movie',
+    year = '1979'
 
-/*** 
-  Create the array of quote objects and name it `quotes`.
-  Add at least five quote objects to the `quotes` array.
-  Give each quote object a `quote` and `source` property.
-  Add the `citation` property to at least one object in the array.
-  Add the `year` property to at least one object in the array.
-  Use console.log() to log your array of quotes to the console.
-***/
+  },
+  {
+    quote = 'Bond. James Bond.',
+    source = 'Dr. No',
+    citation = 'Movie',
+    year = '1962'
 
+  },
+  {
+    quote = 'I\'ll be back',
+    source = 'The Terminator',
+    citation = 'Movie',
+    year = '1984'
 
+  }
 
+]
 
-/***
-  Create the `getRandomQuote` function to:
-   - Create a variable to store a random number 
-   - Cse the random number to `return` a random quote object from the `quotes` array.
-***/
-
-
+// Get random quote object from 'quotes' array.
+function getRandomQuote() {
+	var randomNumber = Math.floor(Math.random() * quotes.length);
+	return quotes[randomNumber];
+}
 
 
 /***
