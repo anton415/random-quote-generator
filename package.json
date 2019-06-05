@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/anton415/random-quote-generator/issues"
   },
-  "homepage": "https://github.com/anton415/random-quote-generator#readme"
+  "homepage": "https://github.com/anton415/random-quote-generator#readme",
+  "devDependencies": {
+    "jasmine": "^3.4.0"
+  }
 }
